@@ -1,3 +1,4 @@
+
 // like toggle
 function toggleLike(icon) {
     if (icon.classList.contains('liked')) {
@@ -43,7 +44,33 @@ function openPopup(type) {
     } else if (type === "swan") {
         headerContent.textContent = "Avonmouth Swans";
         paragraphContent.textContent = "Residing in Avonmouth, these birds are very cheeky. Please take heed to the swan signs you see on the roads to Severn Beach or Avonmouth Wraehouse regions!";
+    }else if( type === "horse") {
+        headerContent.textContent = "The Valley-side Horses";
+        paragraphContent.textContent = "These valiant creatures can be seen in fields and little farms alongside Yate, Henbury, Almondsbury, Thornbury and Emersons Green";
+    }else if(type=== "rabbit"){
+        headerContent.textContent = "Cute bunnies";
+        paragraphContent.textContent = "These cuties hide in bushes every where, you can find them in parks, forest or non-residential areas such as warehouse distribution centres in Emerson Greens, Avonmouth. Bunnies need to be treated right.";
+    }else if(type=== "seagulls"){
+        headerContent.textContent = "Our everyday seagulls";
+        paragraphContent.textContent= "These birds are Bristolian's everyday birds, protected by law. Do not under any circumstances trouble this species.";
+    }else if(type=== "snail"){
+        headerContent.textContent = "Rainy day Sanils";
+        paragraphContent.textContent = "Snails are prominent in our rainy ecosystem. These creatures are very shy and less argumentative- please be careful not to step on random snail shells in Bristol.";
+    }else if(type=== "fox"){
+        headerContent.textContent = "Stray foxes";
+        paragraphContent.textContent = "This is the most discriminated species in the Bristol ecosystem. Foxes are meant to also be protected and taken care of by animal specialists.";
+    }else if(type=== "squirrel"){
+        headerContent.textContent = "Squirrels";
+        paragraphContent.textContent = "Say no to squirrel killing in Bristol!!!";
+    }else if(type=== "pigeons"){
+        headerContent.textContent = "Pigeons";
+        paragraphContent.textContent = "The friendly neighbour to seagulls. The second most prominent birds in Bristol";
+    }else if(type=== "ducks"){
+        headerContent.textContent = "Ducks";
+        paragraphContent.textContent = "Ducks, ducks, ducks, let's leave em to swim. Feed them crumbles that aren't expired!!";
     }
+    
+    // put the remaining dynamic text here!!!
 
     // Show the popup
     popup.style.display = "flex";
